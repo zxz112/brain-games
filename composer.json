@@ -1,0 +1,20 @@
+{
+    "name": "ilya/php-project-lvl1",
+    "bin": [
+        "bin/brain-games"
+      	],
+    "authors": [
+        {
+            "name": "Ilya VVV",
+            "email": "Ilya@mail.ru"
+        }
+    ],
+
+     "autoload": {
+	"files": ["src/Cli.php"]
+    },
+
+    "require": {
+        "wp-cli/php-cli-tools": "^0.11.11"
+    }
+}
