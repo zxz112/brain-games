@@ -1,5 +1,5 @@
 {
-    "name": "ilya/php-project-lvl1",
+    "name": "games-php1/php-lvl1",
     "bin": [
         "bin/brain-games"
       	],
