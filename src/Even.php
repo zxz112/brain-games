@@ -5,7 +5,7 @@ namespace  BrainGames\Even;
 use function cli\line;
 use function cli\prompt;
 
-function even() 
+function even()
 {
     line('Welcome to the Brain Game!');
     line('Answer "yes" if the number is even, otherwise answer "no".');
@@ -25,6 +25,4 @@ function even()
             break;
         }
     }
-
 }
-
