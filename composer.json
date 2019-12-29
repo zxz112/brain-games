@@ -3,7 +3,9 @@
     "bin": [
         "bin/brain-games",
 	"bin/brain-calc",
-        "bin/brain-even"
+	"bin/brain-gcd",
+        "bin/brain-even",
+	"bin/brain-progression"
       	],
     "authors": [
         {
@@ -12,11 +14,15 @@
         }
     ],
 
-     "autoload": {
-    "files": ["src/games/Cli.php",
-            "src/games/Even.php",
+    "autoload": {
+    "files": [
+		"src/games/Cli.php",
+            	"src/games/Even.php",
 		"src/games/Calc.php",
-		"src/Core.php"]
+		"src/games/Gcd.php",
+		"src/games/Progression.php",
+		"src/Core.php"
+	      ]
     },
 
     "require": {
