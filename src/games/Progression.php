@@ -17,7 +17,8 @@ function makeProgression($beginProgress, $progression)
     }
     return $arrProg;
 }
-function progression() 
+
+function progression()
 {
     $answer = [];
     $que = [];

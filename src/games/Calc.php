@@ -8,7 +8,7 @@ use function BrainGames\Core\run;
 
 const GAMES = 'What is the result of the expression?';
 
-function calc() 
+function calc()
 {
     $mathSymbol = ['*', '+', '-'];
     $answer = [];

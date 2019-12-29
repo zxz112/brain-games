@@ -6,7 +6,6 @@ use function cli\line;
 use function cli\prompt;
 use function BrainGames\Core\run;
 
-
 const GAMES = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 function even()

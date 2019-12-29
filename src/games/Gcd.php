@@ -28,9 +28,9 @@ function obshi($rand1, $rand2)
     $res2 = delit($rand2);
     $result = array_uintersect($res1, $res2, "strcasecmp");
     return max($result);
-
 }
-function gcd() 
+
+function gcd()
 {
     $answer = [];
     $que = [];
