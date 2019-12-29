@@ -2,6 +2,7 @@
     "name": "games-php1/php-lvl1",
     "bin": [
         "bin/brain-games",
+	"bin/brain-calc",
         "bin/brain-even"
       	],
     "authors": [
@@ -12,8 +13,10 @@
     ],
 
      "autoload": {
-    "files": ["src/Cli.php",
-            "src/Even.php"]
+    "files": ["src/games/Cli.php",
+            "src/games/Even.php",
+		"src/games/Calc.php",
+		"src/Core.php"]
     },
 
     "require": {
