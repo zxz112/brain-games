@@ -1,5 +1,4 @@
-# php-games
-#install 
+# install 
 composer global require games-php1/php-lvl1
 
 Games:
