@@ -1,7 +1,7 @@
 {
     "name": "games-php1/php-lvl1",
+    "type": "project",
     "bin": [
-        "bin/brain-games",
 	"bin/brain-calc",
 	"bin/brain-gcd",
         "bin/brain-even",
@@ -17,7 +17,6 @@
 
     "autoload": {
     "files": [
-		"src/games/Cli.php",
             	"src/games/Even.php",
 		"src/games/Calc.php",
 		"src/games/Gcd.php",
@@ -33,7 +32,7 @@
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.5"
     },
-  "scripts": {
+    "scripts": {
         "phpcs" : "phpcs"
     },
     "minimum-stability": "dev",

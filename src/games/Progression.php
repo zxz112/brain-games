@@ -5,6 +5,7 @@ namespace  BrainGames\games\Progression;
 use function cli\line;
 use function cli\prompt;
 use function BrainGames\Core\run;
+use const BrainGames\Core\ROUNDS;
 
 const GAMES = 'What number is missing in the progression?';
 function makeProgression($beginProgress, $progression)
@@ -20,16 +21,16 @@ function makeProgression($beginProgress, $progression)
 
 function progression()
 {
-    $answer = [];
-    $que = [];
-    for ($i = 0; $i < 3; $i++) {
+    $answers = [];
+    $questions = [];
+    for ($i = 0; $i < ROUNDS; $i++) {
         $beginProgress = rand(0, 100);
         $progression = rand(1, 10);
         $randPosition = rand(0, 9);
         $arrProg = makeProgression($beginProgress, $progression);
-        $answer[] = $arrProg[$randPosition];
+        $answers[] = $arrProg[$randPosition];
         $arrProg[$randPosition] = '..';
-        $que[] = implode($arrProg, ' ');
+        $questions[] = implode($arrProg, ' ');
     }
-    run($que, $answer, GAMES);
+    run($questions, $answers, GAMES);
 }

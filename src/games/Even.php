@@ -5,19 +5,19 @@ namespace  BrainGames\games\Even;
 use function cli\line;
 use function cli\prompt;
 use function BrainGames\Core\run;
+use const BrainGames\Core\ROUNDS;
 
 const GAMES = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 function even()
 {
-    $answer = [];
-    $que = [];
-    for ($i = 0; $i < 3; $i++) {
+    $answers = [];
+    $questions = [];
+    for ($i = 0; $i < ROUNDS; $i++) {
         $rand = rand(0, 100);
         $isEven = $rand % 2;
-
-        $que[] = $rand;
-        $answer[] = $isEven ? 'no' : 'yes';
+        $questions[] = $rand;
+        $answers[] = $isEven ? 'no' : 'yes';
     }
-    run($que, $answer, GAMES);
+    run($questions, $answers, GAMES);
 }
