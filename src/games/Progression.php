@@ -5,6 +5,7 @@ namespace  BrainGames\games\Progression;
 use function cli\line;
 use function cli\prompt;
 use function BrainGames\Core\run;
+
 use const BrainGames\Core\ROUNDS;
 
 const GAMES = 'What number is missing in the progression?';

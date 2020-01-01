@@ -31,4 +31,3 @@ function run($questions, $answers, $games)
         line("Congratulations, %s!", $name);
     }
 }
-

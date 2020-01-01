@@ -5,6 +5,7 @@ namespace  BrainGames\games\Prime;
 use function cli\line;
 use function cli\prompt;
 use function BrainGames\Core\run;
+
 use const BrainGames\Core\ROUNDS;
 
 const GAMES = 'Answer "yes" if given number is prime. Otherwise answer "no"';
