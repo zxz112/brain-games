@@ -6,7 +6,7 @@ composer global require games-php1/php-lvl1
 
 # Example games : 
 $ brain-progression  
-Welcome to the Brain Game!  
+Welcome to the Brain Game!   
 What number is missing in the progression?  
 May I have your name?: ilya  
 Hello, ilya!  
