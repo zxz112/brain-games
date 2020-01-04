@@ -5,7 +5,7 @@ namespace  BrainGames\Core;
 use function cli\line;
 use function cli\prompt;
 
-const ROUNDS = 5;
+const ROUNDS = 3;
 
 function run($questions, $answers, $games)
 {
