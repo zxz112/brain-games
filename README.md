@@ -1,5 +1,5 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/69af680caee0b01a9893/maintainability)](https://codeclimate.com/github/zxz112/php-project-lvl12/maintainability)
-[![Build Status](https://travis-ci.org/zxz112/php-project-lvl1.svg?branch=master)](https://travis-ci.org/zxz112/php-project-lvl1)
+[![Build Status](https://travis-ci.com/zxz112/php-project-lvl12.svg?branch=master)](https://travis-ci.com/zxz112/php-project-lvl12)
 
 # install 
 composer global require games-php1/php-lvl1
