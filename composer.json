@@ -34,7 +34,5 @@
     },
     "scripts": {
         "phpcs" : "phpcs"
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }
