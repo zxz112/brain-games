@@ -19,7 +19,6 @@ function run($questions, $answers, $games)
         $answerUser = prompt("Answer");
         if ($answers[$i] == $answerUser) {
             line('Correct');
-
         } else {
                 line("'%s' is wrong answer ;(. Correct answer was '%s'.", $answerUser, $answers[$i]);
                 line("Let's try again, %s!", $name);
