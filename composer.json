@@ -16,14 +16,14 @@
     ],
 
     "autoload": {
-    "files": [
-            	"src/games/Even.php",
-		"src/games/Calc.php",
-		"src/games/Gcd.php",
-		"src/games/Progression.php",
-		"src/games/Prime.php",
-		"src/Core.php"
-	      ]
+        "files": [
+            "src/games/Even.php",
+	    "src/games/Calc.php",
+	    "src/games/Gcd.php",
+	    "src/games/Progression.php",
+	    "src/games/Prime.php",
+	    "src/Core.php"
+          ]
     },
 
     "require": {

@@ -2,13 +2,11 @@
 
 namespace  BrainGames\games\Prime;
 
-use function cli\line;
-use function cli\prompt;
 use function BrainGames\Core\run;
+use const BrainGames\Core\ROUNDS_COUNT;
 
-use const BrainGames\Core\ROUNDS;
+const DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no"';
 
-const GAMES = 'Answer "yes" if given number is prime. Otherwise answer "no"';
 function isPrime($num)
 {
     if ($num <= 1) {
@@ -21,15 +19,16 @@ function isPrime($num)
     }
     return true;
 }
+
 function prime()
 {
     $answers = [];
     $questions = [];
-    for ($i = 0; $i < ROUNDS; $i++) {
+    for ($i = 0; $i < ROUNDS_COUNT; $i++) {
         $randNum = rand(0, 100);
         $questions[] = $randNum;
         $rightAnswer = isPrime($randNum) ? 'yes' : 'no';
         $answers[] = $rightAnswer;
     }
-    run($questions, $answers, GAMES);
+    run($questions, $answers, DESCRIPTION);
 }

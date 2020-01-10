@@ -2,30 +2,24 @@
 
 namespace  BrainGames\games\Even;
 
-use function cli\line;
-use function cli\prompt;
 use function BrainGames\Core\run;
+use const BrainGames\Core\ROUNDS_COUNT;
 
-use const BrainGames\Core\ROUNDS;
-
-const GAMES = 'Answer "yes" if the number is even, otherwise answer "no".';
+const DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 function isEven($num)
 {
-    if ($num % 2 == 0) {
-        return 'yes';
-    }
-    return 'no';
+    return ($num % 2 == 0);
 }
 
 function even()
 {
     $answers = [];
     $questions = [];
-    for ($i = 0; $i < ROUNDS; $i++) {
-        $rand = rand(0, 100);
-        $questions[] = $rand;
-        $answers[] = isEven($rand);
+    for ($i = 0; $i < ROUNDS_COUNT; $i++) {
+        $question = rand(0, 100);
+        $questions[] = $question;
+        $answers[] = isEven($question) ? 'yes' : 'no';
     }
-    run($questions, $answers, GAMES);
+    run($questions, $answers, DESCRIPTION);
 }

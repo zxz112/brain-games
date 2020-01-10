@@ -2,38 +2,35 @@
 
 namespace  BrainGames\games\Progression;
 
-use function cli\line;
-use function cli\prompt;
 use function BrainGames\Core\run;
+use const BrainGames\Core\ROUNDS_COUNT;
 
-use const BrainGames\Core\ROUNDS;
-
-const GAMES = 'What number is missing in the progression?';
+const DESCRIPTION = 'What number is missing in the progression?';
 const LENGTH_PROGRESSION = 10;
 
-function makeProgression($beginProgress, $progression)
+function makeProgression($beginProgress, $diffProgression)
 {
-    $arrProg = [];
+    $progression = [];
     $temp = $beginProgress;
     for ($i = 0; $i < LENGTH_PROGRESSION; $i++) {
-        $temp = $temp + $progression;
-        $arrProg[$i] = $temp;
+        $temp = $temp + $diffProgression;
+        $progression[$i] = $temp;
     }
-    return $arrProg;
+    return $progression;
 }
 
 function progression()
 {
     $answers = [];
     $questions = [];
-    for ($i = 0; $i < ROUNDS; $i++) {
+    for ($i = 0; $i < ROUNDS_COUNT; $i++) {
         $beginProgress = rand(0, 100);
-        $progression = rand(1, 10);
+        $diffProgression = rand(1, 10);
         $randPosition = rand(0, LENGTH_PROGRESSION - 1);
-        $arrProg = makeProgression($beginProgress, $progression);
-        $answers[] = $arrProg[$randPosition];
-        $arrProg[$randPosition] = '..';
-        $questions[] = implode($arrProg, ' ');
+        $progression = makeProgression($beginProgress, $diffProgression);
+        $answers[] = $progression[$randPosition];
+        $progression[$randPosition] = '..';
+        $questions[] = implode($progression, ' ');
     }
-    run($questions, $answers, GAMES);
+    run($questions, $answers, DESCRIPTION);
 }
