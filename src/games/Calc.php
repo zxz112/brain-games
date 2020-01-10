@@ -3,6 +3,7 @@
 namespace  BrainGames\games\Calc;
 
 use function BrainGames\Core\run;
+
 use const BrainGames\Core\ROUNDS_COUNT;
 
 const DESCRIPTION = 'What is the result of the expression?';
