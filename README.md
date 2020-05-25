@@ -1,4 +1,4 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/69af680caee0b01a9893/maintainability)](https://codeclimate.com/github/zxz112/php-project-lvl12/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/1de42fd3530a2f2837df/maintainability)](https://codeclimate.com/github/zxz112/brain-games/maintainability)
 [![Build Status](https://travis-ci.com/zxz112/php-project-lvl12.svg?branch=master)](https://travis-ci.com/zxz112/php-project-lvl12)
 
 # install 
